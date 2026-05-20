@@ -325,8 +325,14 @@ button[type="submit"]:hover {
 }
 
 .social-links a {
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
 @media (min-width: 768px) {
