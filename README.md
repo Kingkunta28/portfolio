@@ -17,8 +17,8 @@ This project is a personal portfolio page built with HTML5, CSS3, and responsive
 
 ## Live Demo
 
-The site will be published on GitHub Pages at:
+The site will be published on GitHub Pages 
 
-`https://<username>.github.io/portfolio/`
+(https://kingkunta28.github.io/portfolio/)
 
-Replace `<username>` with your GitHub username once the repo is live.
+
