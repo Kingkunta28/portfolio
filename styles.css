@@ -1,11 +1,12 @@
 :root {
-  --bg: #0a0e27;
-  --surface: #1a1f3a;
-  --primary: #3b82f6;
-  --accent: #60a5fa;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --border: rgba(59, 130, 246, 0.25);
+  --bg: #05070f;
+  --surface: #0d1426;
+  --primary: #00a3ff;
+  --accent: #5ce1ff;
+  --neon-blue: #00b7ff;
+  --text: #e8f3ff;
+  --muted: #8fa5bf;
+  --border: rgba(0, 183, 255, 0.28);
 }
 
 * {
@@ -80,7 +81,7 @@ img {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: linear-gradient(90deg, #008cff, var(--accent));
   transition: width 0.3s ease;
 }
 
@@ -133,8 +134,8 @@ img {
   min-height: 18rem;
   border-radius: 1rem;
   overflow: hidden;
-  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.3), inset 0 0 0 1px rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, #0b1f45 0%, #08101f 100%);
+  box-shadow: 0 0 40px rgba(0, 183, 255, 0.35), inset 0 0 0 1px rgba(0, 183, 255, 0.25);
 }
 
 .about-photo img {
@@ -170,16 +171,16 @@ img {
   display: inline-block;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(0, 183, 255, 0.2);
   color: var(--accent);
   font-size: 0.9rem;
-  border: 1px solid rgba(59, 130, 246, 0.4);
+  border: 1px solid rgba(0, 183, 255, 0.45);
   transition: all 0.3s ease;
 }
 
 .project-tag:hover {
-  background: rgba(59, 130, 246, 0.35);
-  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+  background: rgba(0, 183, 255, 0.35);
+  box-shadow: 0 0 14px rgba(0, 183, 255, 0.55);
 }
 
 @keyframes fadeInUp {
@@ -232,7 +233,7 @@ img {
   overflow: hidden;
   padding: 1.25rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, #111a2e 0%, #0a101d 100%);
   border: 1px solid var(--border);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
@@ -242,14 +243,14 @@ img {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 35%);
+  background: radial-gradient(circle at top right, rgba(0, 183, 255, 0.18), transparent 35%);
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 50px rgba(59, 130, 246, 0.4), 0 22px 40px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 50px rgba(0, 183, 255, 0.38), 0 22px 40px rgba(0, 163, 255, 0.16);
   border-color: var(--accent);
-}}
+}
 
 .contact-form {
   display: flex;
@@ -279,27 +280,33 @@ img {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline: 2px solid rgba(0, 183, 255, 0.6);
   border-color: var(--accent);
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(20, 35, 58, 0.85);
 }
 
 button[type="submit"] {
   width: fit-content;
   padding: 0.9rem 1.3rem;
-  border: none;
+  border: 1px solid rgba(0, 183, 255, 0.75);
   border-radius: 0.85rem;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background: linear-gradient(135deg, #0077ff 0%, var(--neon-blue) 55%, #67e8ff 100%);
   color: white;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.35s ease;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow: 0 0 18px rgba(0, 183, 255, 0.55), 0 0 34px rgba(0, 183, 255, 0.35);
 }
 
 button[type="submit"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  filter: brightness(1.08);
+  box-shadow: 0 0 24px rgba(0, 183, 255, 0.75), 0 0 44px rgba(0, 183, 255, 0.55);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 0 14px rgba(0, 183, 255, 0.6), 0 0 28px rgba(0, 183, 255, 0.4);
 }
 
 .contact-info {
@@ -332,7 +339,7 @@ button[type="submit"]:hover {
 
 .social-links a:hover {
   color: var(--primary);
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  text-shadow: 0 0 12px rgba(0, 183, 255, 0.6);
 }
 
 @media (min-width: 768px) {
