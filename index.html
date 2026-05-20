@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="#home"><h1>My Portfolio</h1></a>
+      <p>Web Developer &amp; Designer</p>
+    </div>
+
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section about-section">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi! I’m a student learning modern web development. I build clean, responsive websites using semantic HTML5 and CSS3, with a focus on structure, accessibility, and design.</p>
+          <p>I enjoy turning ideas into polished digital experiences and learning new front-end tools every week.</p>
+        </div>
+        <div class="about-photo" aria-label="Profile photo"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p>Responsive layouts, accessible components, and clean design.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Portfolio Landing</h3>
+          <p>A responsive landing page with semantic sections and modern style.</p>
+          <span class="project-tag">HTML</span>
+        </article>
+        <article class="project-card">
+          <h3>Grid Gallery</h3>
+          <p>CSS Grid project gallery that adapts from mobile to desktop.</p>
+          <span class="project-tag">CSS</span>
+        </article>
+        <article class="project-card">
+          <h3>Contact Form</h3>
+          <p>Clean form layout with labels, focus states, and mobile-first design.</p>
+          <span class="project-tag">UI</span>
+        </article>
+        <article class="project-card">
+          <h3>UX Case Study</h3>
+          <p>Design process summary with research, wireframes, and user flows.</p>
+          <span class="project-tag">Design</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Send a message if you want to collaborate or learn more.</p>
+      </div>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 My Portfolio. Built with HTML5, CSS3, and responsive design.</p>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
