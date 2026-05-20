@@ -107,9 +107,11 @@ img {
 }
 
 .about-photo {
+  width: 100%;
   min-height: 18rem;
   border-radius: 1rem;
   overflow: hidden;
+  background: #eef2ff;
   box-shadow: 0 20px 45px rgba(18, 32, 80, 0.08);
 }
 
